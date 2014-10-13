@@ -140,10 +140,67 @@
                         
                         <div class="comments_Area">
                             <div class="comments_area_title contents_title">comments</div>
+                            <div class="comments_Area_main">
+                                    <ul>
+                                        <li>
+                                            <div class="comment_box clearfix">
+                                              <div class="comment_txt_area clearfix">
+                                               <ul>
+                                                   <li>name : </li>
+                                                   <li>へのへのもへじ</li>
+                                                   <li>subtitle : </li>
+                                                   <li>なるほどねん</li>
+                                                   <li>URL : </li>
+                                                   <li>http://ww.ttttt.com</li>
+                                                   <li>comment : </li>
+                                                   <li>
+                                                   <div>
+                                                       aおおおおおssssssおおaaaaaお</br>おおおおおおおおおおおa</br>aaaaお</br>おおおおおおおおおおおaaaaa
+                                                       <p>おおおおおおおおおおおおaaaaaおおおおおおおおおおおおaaaaaおおおおおおおおおお</p>
+                                                       おおおおおおおおおおおおaaaaaおおおおおおおおおおおおaaaaaおおおおおおおおおおおお
+                                                       <p>おおおおおおおおおおおおaaaaaおおおおおおおおおおおおaaaaaおおおおおおおおおお</p>おおお
+                                                       aaaaaおおおおおおおおおおおおaaaaaおおおおおおおおおおお
+                                                   </div>
+                                                   </li>
+                                               </ul>
+                                               </div>
+                                               <div class="comment_reply_area">
+                                                   <div class="reply_btn"><a href="">Reply</a></div>
+                                               </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                            </div>
                         </div>
                         <div class="comments_post_Area">
+                           <?php comments_template(); ?> 
                             <div class="comments_area_title contents_title">post comment</div>
-                            <?php comments_template(); ?>
+                            <div class="comments_Area_main">
+                                    <ul>
+                                        <li>
+                                            <div class="comment_box clearfix">
+                                              <div class="comment_txt_area ">
+                                                    <form action="#" name="contact_name" method="post">
+                                                        <dl class="contact_area">
+                                                            <dt><label for="name"><span class="contact_required">*Subtitle</span> : </label></dt>
+                                                            <dt class="post_area"><input type="text" id="name" name="name" required aria-required="true" value="" placeholder="Subtitle..." /></dt>
+                                                            <dt><label for="name"><span class="contact_required">*name</span> : </label></dt>
+                                                            <dt class="post_area"><input type="text" id="name" name="name" required aria-required="true" value="" placeholder="your name..." /></dt>
+                                                            <dt><label for="email"><span class="contact_required">*email</span> :</label></dt>
+                                                            <dt class="post_area"><input type="text" id="email" name="email" required aria-required="true" value="" placeholder="E-mail adress..." /></dt>
+                                                            <dt><label for="url">URL : </label></dt>
+                                                            <dt class="post_area"><input type="text" id="url" name="url" value="" placeholder="URL..." /></dt>
+                                                            <dt ><label for="comment"><span class="contact_required">*comment</span> :</label></dt>
+                                                            <dt ><textarea name="comment" rows="7" cols="100%" required aria-required="true" placeholder="put your comment..." ></textarea></dt>
+                                                            <dd><button><span>Submit / コメントする</span></button></dd>
+                                                            <dd><p style="font-size:0.5em;font-weight:bold;">* : 必須項目、Mandatory field</p></dd>
+                                                        </dl>
+                                                    </form>
+                                               </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                            </div>
                         </div>
                 </div>
             </div>
